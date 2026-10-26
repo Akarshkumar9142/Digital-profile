@@ -23,7 +23,15 @@ For a card that opens a website on nearly every modern phone, use an **NTAG213, 
 | `style.css` | Look and feel. |
 | `script.js` | Builds the page from `profile.js`, the 3D card motion, and the vCard download. |
 | `qr.js` | Small QR code generator for the optional QR panel. |
+| `portfolio-data.js` | Editable project details and optional CV PDF path. |
+| `portfolio.js` | Projects and CV pages, project details, and page navigation. |
 | `favicon.svg` | Browser tab icon. The page replaces it with your initials automatically. |
+
+## Projects and CV pages
+
+Use the Projects and CV / Resume buttons at the top of the profile to open the portfolio views. Update project titles, descriptions, technologies, screenshots, and verified demo or repository links in `portfolio-data.js`. The included NFC Digital Identity Portal entry uses the current project files and Git remote. Add your own contribution details only when you are ready; the current page marks that field as editable.
+
+The resume view uses genuine information from `profile.js` and the project list. Education, experience, certifications, and a professional summary are clearly marked as not added until you provide them. No CV PDF is currently included, so the download button stays disabled. To enable it, add the real file at `assets/Akarsh_Kumar_CV.pdf` and set `resumePdf: "assets/Akarsh_Kumar_CV.pdf"` in `portfolio-data.js`. The page checks that the file exists before enabling download. You can also use **Print resume** to print or save the resume page as a PDF.
 
 ## 1. Preview on your computer
 

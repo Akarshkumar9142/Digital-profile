@@ -320,8 +320,8 @@
   };
   const frame = () => {
     raf = 0;
-    cur.x += (tgt.x - cur.x) * 0.1;
-    cur.y += (tgt.y - cur.y) * 0.1;
+    cur.x += (tgt.x - cur.x) * 0.34;
+    cur.y += (tgt.y - cur.y) * 0.34;
     if (Math.abs(tgt.x - cur.x) < 0.02 && Math.abs(tgt.y - cur.y) < 0.02) { cur.x = tgt.x; cur.y = tgt.y; paint(); return; }
     paint();
     raf = requestAnimationFrame(frame);
